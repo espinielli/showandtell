@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Data Science<br>Show &amp; Tell</title>
+
+<meta name="description" content="Data Science<br>Show &amp; Tell">
+
+  <meta name="author" content="Enrico Spinielli" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+<link rel="stylesheet" href="css/espin.css">
+
+<style type="text/css">
+    body
+    {
+        background-color: rgb(50, 157, 196);
+    }
+
+</style>
+
+<!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+  document.write( '<link rel="stylesheet" href="css/print/' +
+    ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) +
+    '.css" type="text/css" media="print">' );
+</script>
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<section>
+<h1>Data Science<br>Show &amp; Tell</h1>
+<h3>Enrico Spinielli</h3>
+<p>
+<h4>June 9, 2016</h4>
+</p>
+<br>
+<br>
+<br>
+<p>Live slides available at <a href="https://espinielli.github.com/showandtell">https://espinielli.github.com/showandtell</a></p>
+<p>PDF and source of slides available at <a href="https://github.com/espinielli/showandtell">https://github.com/espinielli/showandtell</a></p>
+</section>
+
+
+<section id="section" class="slide level2" data-background-image="images/mindmap.jpg" data-background-size="1000px" data-background-position="bottom">
+<h1></h1>
+</section>
+<section id="given" class="slide level2">
+<h1>Given:</h1>
+<ul>
+<li class="fragment">life is <em>short</em></li>
+<li class="fragment">I am lazy</li>
+<li class="fragment">You should not lie</li>
+<li class="fragment">Humans are intelligent (w/ caveats ;-)</li>
+<li class="fragment">... and not all of them are working at Eurocontrol</li>
+</ul>
+</section>
+<section id="it-follows" class="slide level2">
+<h1>...it follows</h1>
+<ul>
+<li class="fragment">I'll (procastinate on boring stuff and only) work on useful/fun projects</li>
+<li class="fragment">Automation saves me from repeating boring and/or forgotten tasks</li>
+<li class="fragment">I'll be open to let others critisize/scrutinize/learn</li>
+<li class="fragment">...and I'll learn back from them</li>
+<li class="fragment">I'll strive to produce truthful explanations/visualizations</li>
+</ul>
+</section>
+<section><section id="lets-do-it" class="titleslide slide level1"><h1>Let's Do It!</h1></section><section id="the-axioms-imho" class="slide level2" data-background-image="images/mindmap.jpg" data-background-size="600px" data-background-position="bottom">
+<h1>The Axioms (IMHO)</h1>
+<ul>
+<li>Value of data --&gt; visualization</li>
+<li>Visualization --&gt; WWW</li>
+<li>Make <em>data</em> available</li>
+</ul>
+<aside class="notes">
+<ul>
+<li><em>no Web</em>: then you do not exist, i.e. EC/PRB/PRU</li>
+<li><em>no boring stuff</em>: enough of it, do better.</li>
+<li><em>truthful</em>: no evil</li>
+<li><em>visualization</em>: humans perception &amp; best practices!</li>
+<li>data availability!</li>
+</ul>
+</aside>
+</section><section id="the-plan-jan-2015" class="slide level2">
+<h1>The Plan<br><small>(Jan 2015)</small></h1>
+<ul>
+<li>Generate a (static) website for the PRU</li>
+<li>Version control it all</li>
+<li>Automate!</li>
+</ul>
+<aside class="notes">
+<ul>
+<li><em>static</em>: no need of server, no authentication, no hacks!</li>
+<li><em>version control</em>: done by systems not humans, i.e. naming convention in folders...</li>
+<li><em>automation</em>: the only way to scale</li>
+</ul>
+</aside>
+</section></section>
+<section><section id="now-one-year-and-a-half-later" class="titleslide slide level1" data-background-image="images/website-home.png" data-background-size="850px" data-background-position="bottom"><h1>Now <br><small>one year and a half later</small></h1></section><section id="sections" class="slide level2" data-background-image="images/website-bar.png" data-background-size="900px">
+<h1>Sections</h1>
+</section><section id="demo-time" class="slide level2">
+<h1>Demo time</h1>
+<ul>
+<li>Make sure to navigate from Data to Metadata (last column in the table)</li>
+<li>Check the Graphs out</li>
+<li>Enjoy the Studies</li>
+</ul>
+<p><a href="http://ansperformance.eu" target="_blank">the official PRU site, http://ansperformance.eu</a></p>
+</section></section>
+<section><section id="features" class="titleslide slide level1"><h1>Features</h1></section><section id="section-1" class="slide level2">
+<h1><img src="images/git-logo.png" height="100" /> &amp; <img src="images/octocat.png" height="100" /></h1>
+<figure>
+<img src="images/website-repo.png" height="700" />
+</figure>
+</section><section id="user.github.io" class="slide level2">
+<h1><img src="images/github-pages.png" height="150" /> <small><code>&lt;user&gt;.github.io</code></small></h1>
+<figure>
+<img src="images/github-serving.png" height="700" />
+</figure>
+</section><section id="tech-docs" class="slide level2">
+<h1>Tech Docs</h1>
+<figure>
+<img src="images/github-wiki.png" height="700" />
+</figure>
+</section><section id="release" class="slide level2">
+<h1>Release</h1>
+<figure>
+<img src="images/github-pr.png" height="700" />
+</figure>
+</section><section id="bugs" class="slide level2">
+<h1>Bugs</h1>
+<figure>
+<img src="images/github-issues.png" height="700" />
+</figure>
+</section><section id="editing" class="slide level2">
+<h1>Editing</h1>
+<ul>
+<li>easy, i.e. textual (ASCII, no HTML): separate <em>content</em> from <em>style</em></li>
+<li>nice Math (via <a href="https://www.mathjax.org/" title="MathJax">MathJax</a>): <span class="math display">\[f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n\]</span></li>
+<li>bibliography: cite and style</li>
+<li>templates for different kind of pages (Definitions, list of ANSP's, RN's)</li>
+</ul>
+</section><section id="markdown" class="slide level2">
+<h1>Markdown <img src="images/markdown-logo.png" height="100" /></h1>
+<p>No need to edit in HTML: we (mainly) use <a href="https://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> (from <a href="http://pandoc.org/" title="Pandoc">Pandoc</a>)</p>
+<pre><code>## Methodology
+
+[Horizontal en-route flight efficiency methodology](/r/m/hfe_pi.html)
+is fully consistent with the Single European Sky (SES)
+Performance Scheme [see {% cite pru-hfe-pi --file aviation %}].
+
+## Column naming and types
+
+### HFE data
+
+{:.metatable}
+| Column name | Src | Label     | Column description    | Example |
+|-------------|-----|-----------|-----------------------|---------|
+| YEAR        | NM  | YEAR      | Reference year        | 2014    |
+| MONTH_NUM   | NM  | MONTH_NUM | Month (numeric)       | 9       |
+| MONTH_MON   | NM  | MONTH_MON | Month (3-letter code) | JAN     |</code></pre>
+</section><section id="biblio" class="slide level2" data-background-image="images/website-biblio.png" data-background-size="820px">
+<h1>Biblio</h1>
+</section><section id="generation" class="slide level2">
+<h1>Generation</h1>
+<ul>
+<li>from DB queries to website: scripts</li>
+<li><a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a>: MD -&gt; HTML</li>
+<li><a href="http://pandoc.org/" title="Pandoc">Pandoc</a>: MD -&gt; PDF</li>
+<li>some from Rmarkdown/[<a href="http://yihui.name/knitr/" title="knitr">knitr</a>] in the near future</li>
+</ul>
+</section><section id="workflows" class="slide level2">
+<h1>Workflows</h1>
+<figure>
+<img src="images/workflows.png" height="670" />
+</figure>
+</section><section id="trigger" class="slide level2" data-background-image="images/ci.png" data-background-size="820px">
+<h1>Trigger</h1>
+</section><section id="travis-ci" class="slide level2">
+<h1><a href="https://travis-ci.org/euctrl-pru/website/builds" target="_blank">Travis CI</a></h1>
+<figure>
+<img src="images/travisci-builds.png" height="700" />
+</figure>
+<aside class="notes">
+<ul>
+<li>But we <strong>NEED MORE</strong> to scale: for example checks on data consistency</li>
+</ul>
+</aside>
+</section></section>
+<section><section id="todos" class="titleslide slide level1"><h1>ToDo's</h1></section><section id="db" class="slide level2" data-background-image="images/mindmap.jpg" data-background-size="600px" data-background-position="bottom">
+<h1>DB</h1>
+<ul>
+<li class="fragment">new schema for production: PRUPROD</li>
+<li class="fragment">use current ones for development (PRUDEV) and testing (PRUTEST)</li>
+<li class="fragment">version control [PL]SQL code, i.e. which code was used to produc which indicators</li>
+<li class="fragment"><em>version control</em> the DB used for prod: regulatory repository</li>
+</ul>
+</section><section id="data" class="slide level2">
+<h1>Data</h1>
+<ul>
+<li class="fragment">clarify dimensions</li>
+<li class="fragment">improved the <a href="http://localhost:4000/references/">Meta</a> part of it: definitions, methodology</li>
+<li class="fragment">add more data and (web) API (see <a href="http://www.icao.int/safety/iStars/Pages/API-Data-Service.aspx" title="ICAO iSTARS">ICAO iSTARS</a>)</li>
+<li class="fragment">generate the spreadsheets if CSV files/API are not enough</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Metadata is to be transparent and to avoid confusion, i.e. define what you name/use (delay, trajectory, FIR)</li>
+<li>the API is to make the data available: remember we are not the only smart ones around</li>
+</ul>
+</aside>
+</section><section id="viz" class="slide level2" data-background-video="media/bullets.mp4" data-background-video-loop="true">
+<h1>Viz</h1>
+</section><section id="more-viz" class="slide level2">
+<h1>More Viz</h1>
+<ul>
+<li class="fragment">more Studies/Articles w/ interactivity (see NYT, WP)</li>
+<li class="fragment">more thinking of what is worth plotting</li>
+<li class="fragment">more graphs in Graphs</li>
+<li class="fragment">one year old experiment <a href="http://bl.ocks.org/espinielli/a452dcff7a801fdc656f6218fd53979e" target="_blank">www</a></li>
+<li class="fragment">a recent one w/ STATFOR <a href="http://bl.ocks.org/espinielli/4d6f69898852877e39334a1f01277d4d" target="_blank">www</a></li>
+</ul>
+<aside class="notes">
+<h1 id="wild-thoughts">Wild thoughts</h1>
+<ul>
+<li>personally I am not interested in BI or industrial-like dashboards</li>
+<li>I know that little is used of our NMIR</li>
+</ul>
+<h2 id="just-mine-ones">Just mine ones</h2>
+<ul>
+<li class="fragment">PRR live in the website and PDF generated from the source in git repo</li>
+<li class="fragment">add Jypiter notebooks to the website for case studies</li>
+</ul>
+</aside>
+</section></section>
+<section><section id="conclusions" class="titleslide slide level1 conclusions"><h1>Conclusions</h1></section><section id="we-want-you" class="slide level2 slide:" data-background="images/we-want-you.png" data-background-transition="zoom" data-background-size="100%" data-state="wewantyou">
+<h1>We <em>want</em> you!</h1>
+<style>html.wewantyou .backgrounds {opacity: 0.15;}</style>
+<ul>
+<li class="fragment">Share knowledge (or lack of)</li>
+<li class="fragment">Learn from and know each other</li>
+<li class="fragment">Discover internal and external datasets</li>
+<li class="fragment">critisize <strong>&amp;</strong> propose alternatives</li>
+<li class="fragment">signal things you saw and would like to see implemented in our site<br> For example <a href="http://www.nytimes.com/interactive/2015/us/year-in-interactive-storytelling.html?_r=0" title="New York Time 2015 graphics">NYT</a>, Bloomberg (<a href="http://www.bloomberg.com/graphics">1</a>, <a href="http://www.bloomberg.com/visual-data/">2</a>), <a href="https://www.washingtonpost.com/graphics/national/2015-in-graphics/" title="The Washington Post 2015 graphics">WP</a>, <a href="https://www.propublica.org/data/" title="ProPublica">ProPublica</a>, <a href="http://www.theguardian.com/graphics" title="The Guardian graphics">The Guardian</a>, <a href="http://blogs.ft.com/ftdata/category/graphics/" title="Financial Times graphics">Financial Times</a> ... have fantastic infographics</li>
+</ul>
+</section><section id="we-hear-you" class="slide level2">
+<h1>We <em>hear</em> you!</h1>
+<ul>
+<li class="fragment">emails with questions, proposals are a good start</li>
+<li class="fragment">you are always welcome to come and chat (but bring your coffee)</li>
+<li class="fragment">present at the next <em>Show &amp; Tell</em></li>
+</ul>
+</section><section id="section-2" class="slide level2" data-background="images/wordcloud.svg" data-background-transition="zoom">
+<h1></h1>
+</section></section>
+<section><section id="references-and-inspirations" class="titleslide slide level1"><h1>References and Inspirations</h1></section><section id="tools" class="slide level2">
+<h1>Tools</h1>
+<ul>
+<li><a href="https://git-scm.com/" title="Git">Git</a></li>
+<li><a href="https://github.com/" title="GitHub">GitHub</a></li>
+<li><a href="https://travis-ci.org/" title="Travis CI">TravisCI</a></li>
+<li><a href="https://d3js.org/" title="D3">D3.js</a></li>
+<li><a href="http://vega.github.io/vega-editor/" title="Vega">Vega</a></li>
+<li><a href="https://developers.google.com/chart/" title="Google Charts">Google Charts</a> (w/ caveats)</li>
+<li>R: <a href="http://ggplot2.org/" title="ggplot2">ggplot2</a>, <a href="https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html" title="dplyr">dplyr</a>, <a href="https://www.rstudio.com/" title="R Studio">R Studio</a></li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Google Charts cannot be run offline</li>
+<li>GCharts make your life difficult if you want to load data locally, i.e. CSV instead of Google Spreadsheets</li>
+</ul>
+</aside>
+</section><section id="social" class="slide level2">
+<h1>Social</h1>
+<ul>
+<li>D3.js: <a href="https://bost.ocks.org/mike/" title="Mike Bostock">Mike Bostock</a>, <a href="http://enja.org/" title="Ian Johnson">Ian Johnson</a>, <a href="http://elijahmeeks.com/" title="Elijah Meeks">Elijah Meeks</a>, <a href="http://www.visualcinnamon.com/">Nadieh Bremer</a>, <a href="http://susielu.com/" title="Susie Lu">Susie Lu</a>, <a href="http://www.biovisualize.com/" title="Christophe Viau">Christophe Viau</a></li>
+<li>Viz gurus: <a href="http://www.thefunctionalart.com/" title="The Functional Art">Alberto Cairo</a>, <a href="https://www.perceptualedge.com/" title="Stephen Few">Stephen Few</a>, <a href="https://www.edwardtufte.com/tufte/" title="Edward Tufte">Edward Tufte</a>, <a href="http://enrico.bertini.io/" title="Enrico Bertini">Enrico</a> <a href="http://fellinlovewithdata.com/" title="Fell in Love with Data">Bertini</a>, <a href="http://www.maartenlambrechts.be/" title="Maarten Lambrechts">Maarten Lambrechts</a>, <a href="http://13pt.com/graphics/" title="Jonathan Corum">Jonathan Corum</a>, <a href="http://homes.cs.washington.edu/~jheer/" title="Jeffrey Heer">Jeffrey Heer</a> ...</li>
+<li>Twitter: big inspiration from <code>#d3js</code> <code>#dataviz</code></li>
+<li>Statistics: <a href="http://hadley.nz/" title="Hadley Wickham">Hadley Wickham</a></li>
+<li>Conferences: <a href="http://eyeofestival.com/" title="Eyeo Festival">Eyeo Festival</a>, <a href="https://openvisconf.com/" title="OpenVis Conference">OpenVis Conference</a></li>
+<li>Awards: <a href="http://www.malofiejgraphics.com/" title="Malofiej Award">Malofiej</a>, <a href="http://www.globaleditorsnetwork.org/programmes/data-journalism-awards/" title="Data Journalism Award">Data Journalism Awards</a></li>
+<li>Newspapers: <a href="http://www.nytimes.com/interactive/2015/us/year-in-interactive-storytelling.html?_r=0" title="New York Time 2015 graphics">NYT</a>, <a href="http://www.theguardian.com/graphics" title="The Guardian graphics">The Guardian</a>, <a href="http://www.bloomberg.com/graphics" title="Bloomberg graphics">Bloomberg</a>, <a href="https://www.washingtonpost.com/graphics/national/2015-in-graphics/" title="The Washington Post 2015 graphics">The Washington Post</a>, <a href="https://www.propublica.org/data/" title="ProPublica">Pro Publica</a>, <a href="http://www.npr.org/tags/147165367/graphics" title="NPR">National Public Radio</a> ...</li>
+</ul>
+</section><section id="books" class="slide level2">
+<h1>Books</h1>
+<p>Yes, you still have to study!</p>
+<ul>
+<li>Tufte, Edward</li>
+<li>Cairo, Alberto</li>
+<li>Few, Stephen</li>
+</ul>
+</section><section id="credit-where-it-is-due" class="slide level2">
+<h1>Credit Where it is Due</h1>
+<ul>
+<li>PRU animated logo inspired by <a href="http://idl.cs.washington.edu/" title="University of Washington Interactive Data Lab">UW Interactive Data Lab</a></li>
+<li>Thank You cloud generated w/ <a href="https://www.jasondavies.com/" title="Jason Davies">Jason Davies</a>' <a href="https://www.jasondavies.com/wordcloud/" title="Word Cloud generator">Word Cloud generator</a></li>
+<li>Search Engine functionality from <a href="https://duckduckgo.com/api" title="DuckDuckGo Search API">DuckDuckGo API</a></li>
+<li>Flight Flows inspired by <a href="http://www.global-migration.info/" title="Global Flow of People">Global Flow of People</a> and made possible by adapting <a href="http://www.oeaw.ac.at/vid/">Vienna Institute of Demography</a> shared <a href="http://github.com/null2/globalmigration" title="Circular Plot source code">source code</a></li>
+<li>STATFOR's experiment inspired by <a href="https://twitter.com/amandacox" title="Amanda Cox @ Twitter">Amanda Cox</a>'s <a href="http://www.nytimes.com/interactive/2010/02/02/us/politics/20100201-budget-porcupine-graphic.html" title="NYT: Budget Forecasts, Compared With Reality">NYT article</a> via <a href="http://vega.github.io/vega-editor/" title="Vega">Vega Editor</a> <a href="http://vega.github.io/vega-editor/?mode=vega&amp;spec=budget_forecasts" title="Vega Editor: Budget Forecasts">example</a></li>
+</ul>
+</section></section>
+<section><section id="trivia" class="titleslide slide level1"><h1>Trivia</h1></section><section id="automation-1" class="slide level2">
+<h1>Automation 1</h1>
+<p><a href="http://xkcd.com/1319/">xkdc 1319</a> and <a href="https://www.explainxkcd.com/wiki/index.php/1319:_Automation">explanation</a></p>
+<figure>
+<img src="http://imgs.xkcd.com/comics/automation.png" height="500" />
+</figure>
+<p>Title text: 'Automating' comes from the roots 'auto-' meaning 'self-', and 'mating', meaning 'screwing'.</p>
+</section><section id="automation-2" class="slide level2">
+<h1>Automation 2</h1>
+<p><a href="http://xkcd.com/1205/">xkdc 1205</a> and <a href="https://www.explainxkcd.com/wiki/index.php/1205:_Is_It_Worth_the_Time%3F">explanation</a></p>
+<figure>
+<img src="http://imgs.xkcd.com/comics/is_it_worth_the_time.png" height="500" />
+</figure>
+<p><small>Title text: Don't forget the time you spend finding the chart to look up what you save. And the time spent reading this reminder about the time spent. And the time trying to figure out if either of those actually make sense. Remember, every second counts toward your life total, includingthese right now.</small></p>
+</section><section id="correlation" class="slide level2">
+<h1>Correlation</h1>
+<p><a href="http://xkcd.com/552/">xkdc 1205</a> and <a href="https://www.explainxkcd.com/wiki/index.php/552:_Correlation">explanation</a></p>
+<figure>
+<img src="http://imgs.xkcd.com/comics/correlation.png" height="400" />
+</figure>
+<p>Title text: Correlation doesn't imply causation, but it does waggle its eyebrows suggestively and gesture furtively while mouthing 'look over there'.</p>
+</section><section id="data-accuracy-1" class="slide level2">
+<h1>Data Accuracy 1</h1>
+<p><a href="http://dilbert.com/strip/2008-05-07">Dilbert 2008-05-07</a></p>
+<figure>
+<img src="images/dt080507.gif" height="400" />
+</figure>
+</section><section id="data-accuracy-2" class="slide level2">
+<h1>Data Accuracy 2</h1>
+<p><a href="http://dilbert.com/strip/2008-05-08">Dilbert 2008-05-08</a></p>
+<figure>
+<img src="images/dt080508.gif" height="400" />
+</figure>
+</section><section id="convincing" class="slide level2">
+<h1>Convincing</h1>
+<p><a href="http://xkcd.com/833/">xkdc 833</a> and <a href="http://www.explainxkcd.com/wiki/index.php/Convincing">explanation</a></p>
+<figure>
+<img src="http://imgs.xkcd.com/comics/convincing.png" height="500" />
+</figure>
+<p><small>Title text: Don't forget the time you spend finding the chart to look up what you save. And the time spent reading this reminder about the time spent. And the time trying to figure out if either of those actually make sense. Remember, every second counts toward your life total, includingthese right now.</small></p>
+</section><section id="big-data" class="slide level2">
+<h1>Big Data</h1>
+<figure>
+<img src="images/bigdata.jpg" height="600" />
+</figure>
+</section></section>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    // The "normal" size of the presentation, aspect ratio will be preserved
+    // when the presentation is scaled to fit different resolutions. Can be
+    // specified using percentage units.
+    width: 1250,
+    height: 900,
+
+    // Factor of the display size that should remain empty around the content
+    margin: 0.1,
+
+    // Bounds for smallest/largest possible scale to apply to content
+    minScale: 0.2,
+    maxScale: 1.5,
+    controls: true,
+    progress: true,
+    history: true,
+    center: false,
+    slideNumber: 'c/t',
+  // width and height
+      height: Reveal.getQueryHash().width || '1200',
+  
+      height: Reveal.getQueryHash().height || '900',
+  
+  // available themes are in /css/theme
+      theme: Reveal.getQueryHash().theme || 'sky',
+  
+  // default/cube/page/concave/zoom/linear/fade/none
+      transition: Reveal.getQueryHash().transition || 'default',
+  
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'plugin/math/math.js', async: true },
+    { src: 'bower_components/reveal.js-menu/menu.js' }
+    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+  });
+
+</script>
+</body>
+</html>

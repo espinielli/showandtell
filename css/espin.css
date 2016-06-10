@@ -1,0 +1,12 @@
+body:after {
+    content: url(../images/logo.png);
+    position: fixed;
+    bottom: 3.5em;
+    left: 3.5em;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.reveal section img {
+  border: 0px;
+  box-shadow: 0 0 0px;
+}
